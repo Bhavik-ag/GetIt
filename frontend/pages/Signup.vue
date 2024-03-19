@@ -88,7 +88,8 @@
               <button
                 type="submit"
                 id="Sign-up"
-                class="signup w-full h-[3.25rem] rounded-[1.25rem] backdrop-blur-lg" onclick=(submitForm)
+                class="signup w-full h-[3.25rem] rounded-[1.25rem] backdrop-blur-lg"
+                onclick="(submitForm)"
               >
                 <p class="text-white hover:border-slate-500 tracking-wider">
                   Sign Up
@@ -96,31 +97,16 @@
               </button>
             </a>
           </div>
-          <div class="sign-up-google py-[0.5rem]">
-            <button
-              type="submit"
-              id="submit-google"
-              class="hover:border-blue-600 mt-[1rem] border-2 border-slate-300 w-full bg-white-500 h-[3.25rem] rounded-[1.25rem]"
-            >
-              <div class="google-img inline-flex items-center">
-                <img
-                  src="../assets/google-icon.png"
-                  alt=""
-                  class="w-[1.5rem]"
-                />
-                <a href="#" class="ml-[0.3rem] tracking-wider"
-                  >Sign up with Google</a
-                >
-              </div>
-            </button>
-          </div>
           <div class="optional-sign-in mt-[0.7rem] hi">
-            <p class="flex justify-center hi">
+            <p class="flex justify-center gap-3 hi">
               <span class="account-text tracking-wider dha"
                 >Already have an account?
               </span>
-              <nuxt-link to="/Signin" class="text-red-500 hover:underlined tracking-wider suf">Sign up for free</nuxt-link>
-              
+              <nuxt-link
+                to="/Signin"
+                class="text-red-500 hover:underlined tracking-wider suf"
+                >Login to your account</nuxt-link
+              >
             </p>
           </div>
         </div>
@@ -139,7 +125,6 @@ export default {
         email: "",
         password: "",
         password_check: "",
-        
       },
       errorMessage: "",
     };
